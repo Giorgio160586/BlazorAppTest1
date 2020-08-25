@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorAppTest1.Data;
+using BlazorAppTest1.Pages;
 
 namespace BlazorAppTest1
 {
@@ -28,6 +29,7 @@ namespace BlazorAppTest1
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<DatabaseLibrary.Anagrafica>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,9 @@
+C:\github\BlazorAppTest1\DatabaseLibrary\bin\Debug\netstandard2.0\DatabaseLibrary.deps.json
+C:\github\BlazorAppTest1\DatabaseLibrary\bin\Debug\netstandard2.0\DatabaseLibrary.dll
+C:\github\BlazorAppTest1\DatabaseLibrary\bin\Debug\netstandard2.0\DatabaseLibrary.pdb
+C:\github\BlazorAppTest1\DatabaseLibrary\obj\Debug\netstandard2.0\DatabaseLibrary.csprojAssemblyReference.cache
+C:\github\BlazorAppTest1\DatabaseLibrary\obj\Debug\netstandard2.0\DatabaseLibrary.AssemblyInfoInputs.cache
+C:\github\BlazorAppTest1\DatabaseLibrary\obj\Debug\netstandard2.0\DatabaseLibrary.AssemblyInfo.cs
+C:\github\BlazorAppTest1\DatabaseLibrary\obj\Debug\netstandard2.0\DatabaseLibrary.dll
+C:\github\BlazorAppTest1\DatabaseLibrary\obj\Debug\netstandard2.0\DatabaseLibrary.pdb
+C:\github\BlazorAppTest1\DatabaseLibrary\obj\Debug\netstandard2.0\DatabaseLibrary.csproj.CoreCompileInputs.cache

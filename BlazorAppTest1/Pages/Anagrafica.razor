@@ -1,0 +1,38 @@
+﻿@page "/anagrafica"
+
+@using DatabaseLibrary
+@using DatabaseLibrary.Models
+
+@inject DatabaseLibrary.Anagrafica service
+
+<h3>Anagrafica</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (anagrafiche != null)
+        {
+            @foreach (var item in anagrafiche)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Nome</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<AnagraficaModel> anagrafiche;
+
+    protected override async Task OnInitializedAsync()
+    {
+        anagrafiche = await service.Select<AnagraficaModel>();
+    }
+}
