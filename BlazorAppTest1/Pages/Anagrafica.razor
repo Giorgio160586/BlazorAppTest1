@@ -28,11 +28,25 @@
     </tbody>
 </table>
 
+
+<input type="text" @bind="@Nome" @oninput="@((e) => { Nome=(string)e.Value;})" /> 
+
+<button type="submit" class="btn btn-primary" @onclick="InserisciAnagrafica">Inserisci</button>
+
 @code {
     private List<AnagraficaModel> anagrafiche;
+
+    private string Nome { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         anagrafiche = await service.Select<AnagraficaModel>();
+    }
+
+    private async Task InserisciAnagrafica()
+    {
+        var p = new AnagraficaModel() { Nome = Nome };
+
+        anagrafiche.Add(await service.Insert(p));
     }
 }
